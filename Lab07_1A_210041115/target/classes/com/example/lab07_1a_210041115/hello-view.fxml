@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="600.0" style="-fx-background-color: #349a9a;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab07_1a_210041115.HelloController">
+   <children>
+      <Button fx:id="shortBreak" layoutX="217.0" layoutY="31.0" mnemonicParsing="false" onAction="#shortBreak" prefHeight="62.0" prefWidth="165.0" style="-fx-background-color: #d03939;" text="Short Break" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Button fx:id="longBreak" layoutX="404.0" layoutY="31.0" mnemonicParsing="false" onAction="#LongBreak" prefHeight="62.0" prefWidth="165.0" style="-fx-background-color: #d03939;" text="Long Break" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Button fx:id="pomodoro" layoutX="28.0" layoutY="31.0" mnemonicParsing="false" onAction="#setPomodoro" prefHeight="62.0" prefWidth="165.0" style="-fx-background-color: #d03939;" text="Pomodoro" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Label fx:id="time" layoutX="130.0" layoutY="118.0" prefHeight="163.0" prefWidth="365.0" text="25" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="96.0" />
+         </font></Label>
+      <Button layoutX="178.0" layoutY="275.0" mnemonicParsing="false" onAction="#start" prefHeight="62.0" prefWidth="251.0" style="-fx-background-color: #ffffff;" text="Start" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="start" layoutX="303.0" layoutY="398.0" mnemonicParsing="false" onAction="#addTaskHandler" prefHeight="62.0" prefWidth="251.0" style="-fx-border-style: dashed;" text="Add Task" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="471.0" layoutY="288.0" mnemonicParsing="false" onAction="#stop" prefHeight="35.0" prefWidth="47.0" style="-fx-background-color: #ffffff;" text="Stop" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="87.0" layoutY="288.0" mnemonicParsing="false" onAction="#pause" prefHeight="35.0" prefWidth="47.0" style="-fx-background-color: #ffffff;" text="Pause" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textArea" layoutX="17.0" layoutY="360.0" prefHeight="62.0" prefWidth="200.0" />
+      <Button fx:id="newBut" layoutX="226.0" layoutY="378.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+   </children>
+</AnchorPane>
